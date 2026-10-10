@@ -625,3 +625,61 @@ button:focus-visible {
 .secao--clara .card {
   background: var(--cor-creme);
 }
+
+/* Página Impacto */
+.nota-academica {
+  margin: 0;
+  font-weight: 600;
+  color: var(--cor-laranja);
+}
+
+.tabela-envolve {
+  overflow-x: auto;
+  margin: 24px 0 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabela {
+  width: 100%;
+  min-width: 40em;
+  border-collapse: collapse;
+  background: var(--cor-branco);
+}
+
+.tabela caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 700;
+  color: var(--cor-escura);
+  padding: 0 0 12px;
+}
+
+.tabela th,
+.tabela td {
+  padding: 12px 14px;
+  border: 1px solid var(--cor-borda);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tabela th[scope="col"] {
+  background: var(--cor-verde);
+  color: var(--cor-branco);
+  text-align: right;
+}
+
+.tabela th[scope="col"]:first-child,
+.tabela th[scope="row"] {
+  text-align: left;
+}
+
+.tabela tbody tr:nth-child(even) {
+  background: var(--cor-creme);
+}
+
+.tabela tfoot th,
+.tabela tfoot td {
+  background: var(--cor-verde-claro);
+  font-weight: 700;
+  color: var(--cor-escura);
+}
