@@ -620,3 +620,8 @@ button:focus-visible {
     transform: none;
   }
 }
+
+/* Página Sobre */
+.secao--clara .card {
+  background: var(--cor-creme);
+}
