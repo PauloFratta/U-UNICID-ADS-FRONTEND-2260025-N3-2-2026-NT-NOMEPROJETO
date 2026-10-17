@@ -1,0 +1,35 @@
+---
+description: Padrões de CSS responsivo e consistente do EcoConecta
+globs: "**/*.css"
+alwaysApply: false
+---
+# CSS — EcoConecta
+
+## 1. Objetivo
+Preservar um visual consistente, responsivo e acessível sem criar estilos divergentes entre as páginas.
+
+## 2. Contexto
+- `css/style.css` é a folha principal já vinculada a `index.html`, `sobre.html` e `impacto.html`.
+- Ela usa variáveis em `:root`, nomes de classes em português e convenções de componentes como `.card`, `.card__icone` e `.botao--primario`.
+- `styles/globals.css` também existe, mas não está vinculado às páginas atuais; confirme sua finalidade antes de alterá-lo.
+
+## 3. Regras
+- Reutilize variáveis, componentes e padrões existentes em `css/style.css`; não duplique regras sem necessidade.
+- Siga a abordagem mobile-first e use media queries para ampliar o layout em telas maiores.
+- Preserve os nomes em português e a convenção de modificadores e elementos já adotada pelo componente.
+- Prefira classes e propriedades previsíveis; evite seletores excessivamente específicos, estilos inline e `!important`.
+- Garanta foco visível para teclado, contraste adequado e estados de interação que não dependam só de cor.
+- Não esconda conteúdo essencial em telas pequenas e verifique que imagens e tabelas não quebrem o layout.
+- Não introduza bibliotecas, pré-processadores ou mudanças globais de estilo sem necessidade aprovada.
+
+## 4. Exemplos
+- Consulte `:root` em `css/style.css` para cores, fonte, raio, sombra e largura máxima.
+- Para uma nova variação de botão, estenda o padrão existente como `.botao--primario` e `.botao--secundario`.
+
+## 5. Erros a evitar
+- Não redefina cores e espaçamentos já cobertos por variáveis sem motivo.
+- Não remova indicadores de foco nem use contraste insuficiente.
+- Não altere estilos de arquivos não relacionados à página solicitada.
+
+## 6. Perguntas
+Se a mudança exigir uma nova identidade visual, breakpoint, biblioteca ou alteração ampla de componentes, confirme a decisão com a equipe.

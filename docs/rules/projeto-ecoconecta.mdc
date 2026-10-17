@@ -1,0 +1,37 @@
+---
+description: Contexto, escopo e decisões gerais do projeto EcoConecta
+globs:
+alwaysApply: true
+---
+# Projeto EcoConecta
+
+## 1. Objetivo
+Manter as mudanças alinhadas ao escopo acadêmico, à identidade e à estrutura do EcoConecta.
+
+## 2. Contexto
+- Leia `docs/readme.md` antes de mudanças que afetem escopo, arquitetura ou conteúdo.
+- O projeto é uma interface estática em HTML5 e CSS3; JavaScript é opcional e só deve ser acrescentado quando necessário para a tarefa aprovada.
+- As páginas HTML ficam na raiz; `css/style.css` é a folha de estilos principal das páginas existentes.
+- Há três páginas presentes (`index.html`, `sobre.html` e `impacto.html`); as outras sete páginas da atividade ainda são escopo futuro.
+- A organização e todos os dados exibidos são fictícios e acadêmicos.
+
+## 3. Regras
+- Preserve os padrões visuais e de conteúdo já estabelecidos nas páginas do EcoConecta.
+- Não introduza frameworks, dependências, backend ou serviços externos sem solicitação explícita.
+- Mantenha a navegação consistente; não apresente uma página ainda inexistente como concluída.
+- Não invente estatísticas como reais: identifique claramente todo indicador fictício.
+- Não use dados pessoais reais, credenciais ou tokens no código, na documentação ou nos exemplos.
+- Revise o diff e valide a mudança antes de concluir; peça esclarecimento se uma decisão alterar o escopo.
+
+## 4. Exemplos do projeto
+- Para estilos das páginas atuais, consulte `css/style.css`.
+- Para estrutura de página, consulte `index.html`, `sobre.html` e `impacto.html`.
+- Para o escopo completo, consulte `docs/readme.md`.
+
+## 5. Erros a evitar
+- Não substituir o tema de sustentabilidade e inclusão por conteúdo de demonstração sem relação com o EcoConecta.
+- Não afirmar que formulário, publicação, integração ou indicador funciona em produção sem evidência no código.
+- Não sobrescrever arquivos existentes de estilos sem verificar se pertencem às páginas atuais.
+
+## 6. Perguntas
+Se a tarefa exigir dados reais, integrações, mudança de tecnologia ou ampliação de escopo, pergunte à equipe antes de implementar.

@@ -1,0 +1,6 @@
+---
+description: Contexto, escopo e decisões gerais do projeto EcoConecta
+globs:
+alwaysApply: true
+---
+@docs/rules/projeto-ecoconecta.mdc

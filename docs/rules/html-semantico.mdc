@@ -1,0 +1,39 @@
+---
+description: HTML semântico, consistente e acessível nas páginas EcoConecta
+globs: "**/*.html"
+alwaysApply: false
+---
+# HTML semântico — EcoConecta
+
+## 1. Objetivo
+Criar páginas legíveis, navegáveis e acessíveis, mantendo a experiência consistente com as páginas existentes.
+
+## 2. Contexto
+- Páginas atuais: `index.html`, `sobre.html` e `impacto.html`.
+- As dez páginas previstas no escopo estão descritas em `docs/readme.md`.
+- A interface usa HTML5 e CSS externo compartilhado em `css/style.css`.
+
+## 3. Regras
+- Declare `<!DOCTYPE html>`, `lang="pt-BR"`, codificação UTF-8, viewport, título e descrição apropriados.
+- Use landmarks semânticos como `header`, `nav`, `main` e `footer`; organize o conteúdo com `section`, `article`, listas e tabelas conforme o significado.
+- Mantenha um único `h1` por página e uma ordem de títulos lógica; associe títulos de seção com `aria-labelledby` quando apropriado.
+- Reutilize a estrutura comum de cabeçalho, menu e rodapé das páginas existentes sem remover seus recursos de acessibilidade.
+- Marque a página atual com `aria-current="page"` e use rótulos claros nos links e controles.
+- Forneça `alt` útil para imagens informativas e `alt=""` para imagens decorativas; não repita no texto alternativo o conteúdo adjacente sem necessidade.
+- Associe cada `label` ao controle do formulário; use validação HTML5 nativa e tipos apropriados quando formulários forem implementados.
+- Use cabeçalhos e legendas em tabelas, legendas em mídias e nomes acessíveis em iframes.
+- Use CSS externo; não adicione estilos inline nem JavaScript sem necessidade aprovada.
+- Mantenha as páginas interligadas e confirme se cada destino existe ou está explicitamente identificado como pendente.
+
+## 4. Exemplos
+- Use o link de salto para o conteúdo, a navegação rotulada e o `<main id="conteudo">` existentes em `index.html`.
+- Em tabelas de dados, siga o uso de `<caption>`, `<thead>`, `<th scope>` e `<tbody>` de `impacto.html`.
+
+## 5. Erros a evitar
+- Não use elementos genéricos no lugar de landmarks semânticos quando houver um elemento HTML apropriado.
+- Não use imagens sem alternativa textual, controles sem rótulo ou links sem propósito compreensível.
+- Não crie navegação por mouse como única forma de acesso.
+- Não apresente dados fictícios sem identificá-los como fictícios.
+
+## 6. Perguntas
+Se faltar conteúdo, fonte de imagem, destino de link ou comportamento esperado para uma página, pergunte antes de inventar informações.

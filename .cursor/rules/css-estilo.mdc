@@ -1,0 +1,6 @@
+---
+description: Padrões de CSS responsivo e consistente do EcoConecta
+globs: "**/*.css"
+alwaysApply: false
+---
+@docs/rules/css-estilo.mdc

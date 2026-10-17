@@ -1,0 +1,6 @@
+---
+description: HTML semântico, consistente e acessível nas páginas EcoConecta
+globs: "**/*.html"
+alwaysApply: false
+---
+@docs/rules/html-semantico.mdc
